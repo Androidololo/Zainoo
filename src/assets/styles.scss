@@ -1,0 +1,207 @@
+.parent {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  padding-right: 40px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  &__icons {
+    display: flex;
+    padding-top: 4px;
+  }
+
+  &__icon {
+    &:not(:first-child) {
+      margin-left: 25px
+    }
+  }
+
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .column_vertical {
+    display: block;
+    margin-right: 32px;
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__information {
+    margin-top: 111px;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social-networks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 375px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 38px;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3A3A3A;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &__text-first {
+    margin-top: 165px;
+    margin-left: 44px;
+    margin-bottom: 0%;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 100.3%;
+    background: linear-gradient(to right, black 50%, white 50%);
+
+    &_color {
+      color: white;
+    }
+  }
+
+  &__stroke {
+    padding-top: 38px;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__trait {
+    margin-top: 14px;
+    width: 48px;
+    height: 0px;
+    border: 1px solid #000000;
+  }
+
+  &__text-second {
+    margin-left: 55px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 48px;
+    margin-top: 55px;
+
+    &__element {
+      &:not(:first-child) {
+        margin-top: 60px
+      }
+
+      text-decoration: none;
+      font-size: 22px;
+      line-height: 33px;
+      color: #3A3A3A;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+    }
+
+  }
+
+
+}
+
+.line {
+  &__first {
+    position: absolute;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background-color: #E9E9E9;
+    left: 19%;
+  }
+
+  &__second {
+    position: absolute;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background-color: #E9E9E9;
+
+    left: 35%;
+  }
+
+  &__third {
+    position: absolute;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background-color: #E9E9E9;
+    left: 55%;
+  }
+
+  &__fourth {
+    position: absolute;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background-color: #E9E9E9;
+    left: 73.4%;
+  }
+}
+
+.scroll {
+  left: 64px;
+  bottom: 50px;
+  position: fixed;
+  vertical-align: bottom;
+}
