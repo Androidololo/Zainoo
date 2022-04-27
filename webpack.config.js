@@ -36,6 +36,10 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html', // output file
     }),
+    new HtmlWebpackPlugin({
+      template: './src/catalog.html',
+      filename: 'catalog.html', // output file
+    }),
     new CopyWebpackPlugin({
 
       patterns: [
