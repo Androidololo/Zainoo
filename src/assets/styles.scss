@@ -212,7 +212,7 @@
       border-radius: 0px;
     }
 
-    height: 472px;
+    height: 440px;
     width: 226px;
 
     .price {
@@ -226,10 +226,23 @@
       border: 1px solid #9DC2FF;
       box-sizing: border-box;
       border-radius: 4px;
+
     }
-    .footer{
+
+    .footer {
       display: flex;
       justify-content: space-between;
+      height: 32px;
+
+      .button-text {
+        left: calc(50% - 64px/2 + 8px);
+        top: calc(50% - 24px/2);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 83.5%;
+        letter-spacing: -0.052em;
+        color: #2264D1;
+      }
     }
   }
 }
