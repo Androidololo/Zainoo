@@ -8,8 +8,9 @@ async function getCatalog() {
     products.innerHTML += `
     <li id="product" class="product">
     <img class="product__img" src="${content[key].image}" alt="">
+    <span class="product__name">${content[key].title}</span>
+      <span class="product__price">&#36;${content[key].price}</span>      
       <span class="product__description">${content[key].description}</span>
-      <span class="product__price">&#36;${content[key].price}</span> 
         <div class="footer">
           <span class="rating">rating</span>
           <button class="product__add"> <img src="./assets/img/heart.svg" alt=""  style="vertical-align:middle">            
@@ -19,7 +20,7 @@ async function getCatalog() {
     </li>
         `;
   }
-
+  console.log(content);
 }
 
 getCatalog();

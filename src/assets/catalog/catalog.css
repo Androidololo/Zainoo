@@ -1,8 +1,9 @@
 .products {
     display: grid;
-grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     margin: 16px 0px;
     padding-top: 16px;
+
 }
 
 .product {
@@ -21,23 +22,36 @@ grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     border-radius: 8px;
 }
 
-.product__img{
+.product__img {
     width: 224px;
     height: 227px;
     object-fit: contain;
 }
-.product__description{
-    font-family: 'Inter';
-    font-style: normal;
-    overflow-x:hidden;
+
+.product__name {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0275em;
+    color: #19191D;
+}
+
+.product__description {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
     height: 74px;
     width: 224px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+
+    letter-spacing: 0.018em;
+    color: #787885;
+
 }
 
 
 .product__price {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 150%;
