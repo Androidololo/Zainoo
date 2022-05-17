@@ -3,7 +3,7 @@ async function getCatalog() {
   let content = await response.json();
 
   let key;
-
+  const products = document.getElementById('products')
   for (key in content) {
     products.innerHTML += `
     <li id="product" class="product">
